@@ -1,0 +1,456 @@
+﻿/* ========================== */
+/* Estilização Geral          */
+/* ========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Fundo geral branco */
+    color: #003641; /* Verde Escuro */
+}
+
+main {
+    display: flex; /* Layout flex para barra lateral e conteúdo principal */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    gap: 20px; /* Espaçamento entre a sidebar e o conteúdo */
+}
+
+/* ========================== */
+/* Header                     */
+/* ========================== */
+header {
+    background-color: #003641; /* Verde Escuro */
+    padding: 10px 0; /* Espaçamento vertical */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    color: #FFFFFF; /* Branco */
+    height: 100px; /* Altura definida para centralização */
+}
+
+header .logo img {
+    height: 30px;
+    display: block;
+}
+
+/* ========================== */
+/* Sidebar                    */
+/* ========================== */
+.sidebar {
+    margin-top: -20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os botões à esquerda */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px; /* Espaçamento entre os botões */
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Branco */
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px; /* Espaçamento interno */
+    border: 2px solid #00AE9D; /* Borda Turquesa */
+    border-radius: 15px; /* Arredondar bordas */
+    background-color: #00AE9D; /* Fundo Turquesa */
+    display: block;
+    text-align: center; /* Centraliza o texto */
+    transition: all 0.3s ease; /* Animação suave */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #7DB61C; /* Fundo Verde Médio */
+    color: #003641; /* Texto Verde Escuro */
+    border-color: #7DB61C; /* Borda Verde Médio */
+}
+
+.sidebar-button{
+    width: 110px;
+    background-color: #00AE9D; /* Turquesa */
+    color: #FFFFFF; /* Branco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.sidebar-button:hover {
+    background-color: #7DB61C; /* Verde Médio */
+}
+
+/* ========================== */
+/* Conteúdo Principal         */
+/* ========================== */
+.content,.main-container {
+    width: 900px;
+}
+
+
+.create-post {
+    width: 600px;
+    background-color: #FFFFFF; /* Branco */
+    padding: 15px;
+    border: 1px solid #00AE9D; /* Turquesa */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 54, 65, 0.2); /* Verde Escuro translúcido */
+    margin-bottom: 20px;
+}
+
+.create-post textarea {
+    
+    width: 100%;
+    border: 1px solid #00AE9D; /* Turquesa */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.create-post button {
+    background-color: #00AE9D; /* Turquesa */
+    color: #FFFFFF; /* Branco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-post button:hover {
+    background-color: #7DB61C; /* Verde Médio */
+}
+
+/* ========================== */
+/* Exibição de Posts          */
+/* ========================== */
+.post {
+    width: 600px;
+    background-color: #FFFFFF; /* Branco */
+    padding: 15px;
+    border: 1px solid #00AE9D; /* Turquesa */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 54, 65, 0.2); /* Verde Escuro translúcido */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header .profile-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.post-header .username {
+    font-weight: bold;
+    color: #49479D; /* Roxo */
+    text-decoration: none;
+}
+
+.post-header .user-id {
+    font-size: 12px;
+    color: #7DB61C; /* Verde Médio */
+    margin-left: 5px;
+}
+
+.post-header .timestamp {
+    color: #003641; /* Verde Escuro */
+    font-size: 12px;
+}
+
+.post-content {
+    margin-top: 10px;
+    color: #003641; /* Verde Escuro */
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ========================== */
+/* Botões do Post e Comentários */
+/* ========================== */
+.comment-footer,
+.post-footer {
+    display: flex;
+    justify-content: space-between; /* Espaça os botões uniformemente */
+    align-items: center; /* Alinha verticalmente os botões */
+    gap: 15px; /* Espaço entre os botões */
+}
+
+.comment-footer .icon-button,
+.post-footer .icon-button {
+    display: flex;
+    align-items: center; /* Centraliza ícones e textos verticalmente */
+    gap: 5px; /* Espaço entre ícone e texto */
+    background: none; /* Remove fundo */
+    border: none; /* Remove bordas */
+    color: #49479D; /* Roxo */
+    cursor: pointer; /* Mostra cursor ao passar o mouse */
+    font-size: 14px; /* Tamanho do texto */
+}
+
+.comment-footer .icon-button img,
+.post-footer .icon-button img {
+    width: 20px; /* Tamanho do ícone */
+    height: 20px; /* Altura do ícone */
+}
+
+.comment-footer .icon-button span,
+.post-footer .icon-button span {
+    font-size: 14px; /* Tamanho do texto dos números */
+    color: #49479D; /* Mesma cor */
+}
+
+.comment-footer .icon-button:hover,
+.post-footer .icon-button:hover {
+    color: #7DB61C; /* Verde Médio */
+}
+
+/* ========================== */
+/* Comentários                */
+/* ========================== */
+.comment {
+    background-color: #EEF6FF; /* Azul Claro */
+    padding: 10px;
+    border: 1px solid #49479D; /* Roxo */
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    box-shadow: 0 2px 4px rgba(0, 54, 65, 0.2); /* Verde Escuro translúcido */
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment-header .profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.comment-header .username {
+    font-weight: bold;
+    color: #00AE9D; /* Turquesa */
+    text-decoration: none;
+}
+
+.comment-header .user-id {
+    font-size: 11px;
+    color: #7DB61C; /* Verde Médio */
+    margin-left: 5px;
+}
+
+.comment-header .timestamp {
+    color: #003641; /* Verde Escuro */
+    font-size: 12px;
+}
+
+.comment-content {
+    margin-top: 10px;
+    color: #003641; /* Verde Escuro */
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* ========================== */
+/* Caixa de Resposta          */
+/* ========================== */
+.reply-box {
+    background-color: #EEF6FF; /* Azul Claro */
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 4px solid #49479D; /* Roxo */
+    border-radius: 5px;
+}
+
+.reply-box button {
+    background-color: #00AE9D; /* Turquesa */
+    color: #FFFFFF; /* Branco */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.reply-box button:hover {
+    background-color: #7DB61C; /* Verde Médio */
+}
+
+/* ========================== */
+/* Caixa de Texto para Comentários */
+/* ========================== */
+textarea#new-comment {
+    margin-top: 10px;
+    width: calc(100% - 15px);
+    padding: 10px;
+    border: 1px solid #49479D; /* Roxo */
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    background-color: #EEF6FF; /* Azul Claro */
+}
+
+button.comment-post-button {
+    margin-top: 5px;
+    background-color: #00AE9D; /* Turquesa */
+    color: #FFFFFF; /* Branco */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Estilos para o container de notificações */
+.notifications-container {
+  position: fixed;
+  top: 20%;
+  right: 10px;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  max-height: 60%;
+  overflow-y: auto;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #0073e6;
+  color: white;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.notifications-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.mark-all-read-button {
+  background: #fff;
+  color: #0073e6;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.mark-all-read-button:hover {
+  background: #f0f0f0;
+}
+
+.notifications-list {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-item.unread {
+  font-weight: bold;
+  background: #f9f9f9;
+}
+
+.notification-item .notification-message {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.notification-item .mark-as-read-button {
+  background: none;
+  border: none;
+  color: #0073e6;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.notifications-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.notifications-button:hover {
+  background: #005bb5;
+}
+
+
+button.comment-post-button:hover {
+    background-color: #7DB61C; /* Verde Médio */
+}
+
+/* ========================== */
+/* Rodapé (Footer)            */
+/* ========================== */
+footer {
+    background-color: #003641; /* Verde Escuro */
+    color: #FFFFFF; /* Branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 10px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho do texto */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 54, 65, 0.3); /* Sombra superior */
+}
+
+footer p {
+    margin: 0; /* Remove margens padrão */
+}
+
+footer a {
+    color: #00AE9D; /* Turquesa */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #7DB61C; /* Verde Médio */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

@@ -1,0 +1,6 @@
+@CompCredi_HostAddress = http://localhost:5136
+
+GET {{CompCredi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

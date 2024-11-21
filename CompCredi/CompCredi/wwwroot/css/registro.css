@@ -1,0 +1,149 @@
+/* ========================== */
+/* Estilização Geral          */
+/* ========================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF; /* Fundo geral branco */
+  color: #003641; /* Verde Escuro */
+}
+
+/* ========================== */
+/* Header                     */
+/* ========================== */
+header {
+  background-color: #003641; /* Verde Escuro */
+  padding: 10px 0; /* Espaçamento vertical */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  color: #FFFFFF; /* Branco */
+  height: 100px; /* Altura definida para centralização */
+}
+
+header .logo img {
+  height: 30px;
+  display: block;
+}
+/* ========================== */
+/* Página de Registro         */
+/* ========================== */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px); /* Altura total menos o header/footer */
+  padding: 20px;
+}
+
+.register-container h1 {
+  margin-top: -170px;
+  font-size: 32px;
+  color: #003641; /* Verde Escuro */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#registerForm {
+  width: 100%;
+  max-width: 400px; /* Limita o tamanho máximo do formulário */
+  background-color: #FFFFFF; /* Fundo branco */
+  padding: 30px;
+  border: 1px solid #00AE9D; /* Turquesa */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 54, 65, 0.2); /* Sombra elegante */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #003641; /* Verde Escuro */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00AE9D; /* Turquesa */
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #EEF6FF; /* Azul Claro */
+  box-sizing: border-box; /* Inclui o padding no tamanho do input */
+}
+
+.register-button {
+  background-color: #00AE9D; /* Turquesa */
+  color: #FFFFFF; /* Branco */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+.register-button:hover {
+  background-color: #7DB61C; /* Verde Médio */
+  box-shadow: 0 3px 6px rgba(0, 54, 65, 0.3); /* Sombra ao passar o mouse */
+}
+
+.login-button {
+  background-color: #00AE9D; /* Turquesa */
+  color: #FFFFFF; /* Branco */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+.login-button:hover {
+  background-color: #7DB61C; /* Verde Médio */
+  box-shadow: 0 3px 6px rgba(0, 54, 65, 0.3); /* Sombra ao passar o mouse */
+}
+
+/* ========================== */
+/* Rodapé (Footer)            */
+/* ========================== */
+footer {
+  background-color: #003641; /* Verde Escuro */
+  color: #FFFFFF; /* Branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px 10px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho do texto */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 6px rgba(0, 54, 65, 0.3); /* Sombra superior */
+}
+
+footer p {
+  margin: 0; /* Remove margens padrão */
+}
+
+footer a {
+  color: #00AE9D; /* Turquesa */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #7DB61C; /* Verde Médio */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

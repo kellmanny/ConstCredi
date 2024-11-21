@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompCredi - Login</title>
+    <link rel="stylesheet" href="css/loguin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="CompCredi Logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Bem-vindo(a)!</h1>
+            <p>Faça login para acessar sua conta</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" id="username" placeholder="Digite seu nome de usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
+            <p class="form-footer">
+                Não tem uma conta? <a href="register.html">Registre-se</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2024 CompCredi - Rede Social | Desenvolvido com 💚 por Kellmanny
+            <a href="https://sicoobcredicitrus.com.br/"> para Forma TI</a>
+        </p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* ========================== */
+/* Estilização Geral          */
+/* ========================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF; /* Fundo geral branco */
+  color: #003641; /* Verde Escuro */
+}
+
+/* ========================== */
+/* Header                     */
+/* ========================== */
+header {
+  background-color: #003641; /* Verde Escuro */
+  padding: 10px 0; /* Espaçamento vertical */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  color: #FFFFFF; /* Branco */
+  height: 100px; /* Altura definida para centralização */
+}
+
+header .logo img {
+  height: 30px;
+  display: block;
+}
+
+/* ========================== */
+/* Estilo do Login            */
+/* ========================== */
+.form-container {
+  background-color: #FFFFFF; /* Fundo branco */
+  border: 1px solid #00AE9D; /* Turquesa */
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 54, 65, 0.2); /* Sombra */
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto; /* Centraliza na página */
+}
+
+h1 {
+  font-size: 24px;
+  color: #003641; /* Verde Escuro */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #49479D; /* Roxo */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #003641; /* Verde Escuro */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00AE9D; /* Turquesa */
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #00AE9D; /* Turquesa */
+  color: #FFFFFF; /* Branco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #7DB61C; /* Verde Médio */
+}
+
+
+
+/* ========================== */
+/* Rodapé (Footer)            */
+/* ========================== */
+footer {
+  background-color: #003641; /* Verde Escuro */
+  color: #FFFFFF; /* Branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px 10px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho do texto */
+  position: fixed; /* Fixa o rodapé na parte inferior */
+  bottom: 0; /* Posiciona na base */
+  left: 0; /* Ajusta para ocupar a largura total */
+  width: 100%; /* Largura total da janela */
+  box-shadow: 0 -2px 6px rgba(0, 54, 65, 0.3); /* Sombra superior */
+  z-index: 100; /* Garante que o rodapé fique acima de outros elementos */
+}
+
+footer p {
+  margin: 0; /* Remove margens padrão */
+}
+
+footer a {
+  color: #00AE9D; /* Turquesa */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #7DB61C; /* Verde Médio */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* ========================== */
+/* Ajuste no Main             */
+/* ========================== */
+main {
+  padding-bottom: 100px; /* Adiciona espaço para evitar sobreposição com o rodapé */
+}

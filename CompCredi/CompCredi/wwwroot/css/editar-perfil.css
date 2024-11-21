@@ -1,0 +1,146 @@
+/* ========================== */
+/* Estilização Geral          */
+/* ========================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF; /* Fundo geral branco */
+  color: #003641; /* Verde Escuro */
+}
+
+/* ========================== */
+/* Header                     */
+/* ========================== */
+header {
+  background-color: #003641; /* Verde Escuro */
+  padding: 10px 0; /* Espaçamento vertical */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  color: #FFFFFF; /* Branco */
+  height: 100px; /* Altura definida para centralização */
+}
+
+header .logo img {
+  height: 30px;
+  display: block;
+}
+
+/* ========================== */
+/* Rodapé (Footer)            */
+/* ========================== */
+footer {
+  background-color: #003641; /* Verde Escuro */
+  color: #FFFFFF; /* Branco */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px 10px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho do texto */
+  position: fixed; /* Fixa o rodapé na parte inferior */
+  bottom: 0; /* Posiciona na base */
+  left: 0; /* Ajusta para ocupar a largura total */
+  width: 100%; /* Largura total da janela */
+  box-shadow: 0 -2px 6px rgba(0, 54, 65, 0.3); /* Sombra superior */
+  z-index: 100; /* Garante que o rodapé fique acima de outros elementos */
+}
+
+footer p {
+  margin: 0; /* Remove margens padrão */
+}
+
+footer a {
+  color: #00AE9D; /* Turquesa */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #7DB61C; /* Verde Médio */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* ========================== */
+/* Ajuste no Main             */
+/* ========================== */
+main {
+  padding-bottom: 100px; /* Adiciona espaço para evitar sobreposição com o rodapé */
+}
+
+/* ========================== */
+/* Estilo da página Editar Perfil */
+/* ========================== */
+.main-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Altura total da tela */
+}
+
+form {
+  background-color: #FFFFFF; /* Fundo branco */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 30px;
+  width: 80%;
+  max-width: 600px; /* Limita a largura */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os campos */
+  text-align: center; /* Centraliza os textos */
+}
+
+h1 {
+  font-size: 24px;
+  color: #003641; /* Verde Escuro */
+  margin-bottom: 20px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #003641; /* Verde Escuro */
+  align-self: flex-start; /* Alinha os labels à esquerda */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: none; /* Desativa redimensionamento */
+}
+
+form input[type="file"] {
+  border: none;
+  padding: 0;
+}
+
+button {
+  background-color: #00AE9D; /* Turquesa */
+  color: #FFFFFF; /* Branco */
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #007B83; /* Azul Escuro */
+}
+
+/* Botão de cancelar */
+button[type="button"] {
+  background-color: #ccc; /* Cinza claro */
+  color: #000; /* Preto */
+}
+
+button[type="button"]:hover {
+  background-color: #999; /* Cinza escuro */
+}

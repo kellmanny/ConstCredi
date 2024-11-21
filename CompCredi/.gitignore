@@ -1,0 +1,50 @@
+# Diretórios e arquivos temporários do Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Diretórios do build
+bin/
+obj/
+out/
+
+# Arquivos de log
+*.log
+
+# Diretórios do sistema operacional
+Thumbs.db
+.DS_Store
+
+# Arquivos de dependências e configurações específicas do IDE
+*.psess
+*.pidb
+*.svd
+
+# Arquivos gerados automaticamente
+*.generated.cs
+*.tmp
+*.bak
+*.swp
+
+# Configuração de ambiente e usuário local
+.env
+appsettings.json
+appsettings.*.json
+
+# Arquivos de lock
+project.lock.json
+*.lock.json
+
+# Arquivos temporários do Git
+*.orig
+
+# Arquivos do Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Outros arquivos que não precisam ser versionados
+**/coverage/
+*.cache/

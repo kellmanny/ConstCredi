@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompCredi - Perfil</title>
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="CompCredi Logo">
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Container do perfil -->
+        <section class="profile-section">
+            <div class="profile-header">
+                <img id="profilePicture" src="assets/profile-pic-placeholder.png" alt="Foto de Perfil" class="profile-picture">
+                <h2 id="username">Nome do Usuário</h2>
+                <p id="email">Biografia não disponível</p>
+                <p id="followersAndFollowing"></p> <!-- Novo elemento para seguidores e seguindo -->
+              </div>
+
+            <div class="profile-actions">
+                <button class="profile-button" id="editProfileButton" onclick="redirectToEditProfile()">Editar Perfil</button>
+                <button class="profile-button" id="voltarATimeline" onclick="voltarATimeline()">Voltar à Timeline</button>
+            </div>
+        </section>
+
+        <!-- Posts do usuário -->
+        <section class="user-posts">
+            <h3>Meus Posts</h3>
+            <div id="userPostsContainer">
+                <!-- Posts do usuário serão carregados aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <p>
+          &copy; 2024 CompCredi - Rede Social | Desenvolvido com 💚 por Kellmanny
+          <a href="https://sicoobcredicitrus.com.br/"> para Forma TI</a>
+      </p>
+  </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

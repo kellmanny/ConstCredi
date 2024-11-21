@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompCredi - Timeline</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Sicoob Credicitrus Logo">
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Menu lateral -->
+        <aside class="sidebar">
+            <button class="sidebar-button" id="profileButton">Perfil</button>
+            <button class="sidebar-button" id="notificationsButton">Notificações</button>
+            <button class="sidebar-button" id="logoutButton">Sair</button>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <div class="content">
+            <!-- Formulário de criação de post -->
+            <section class="create-post">
+                <textarea id="postContent" placeholder="O que você está pensando?" rows="4"></textarea>
+                <button id="createPostButton">Postar</button>
+            </section>
+
+            <!-- Exibição de posts -->
+            <section id="postsSection">
+                <div id="postsContainer">
+                    <!-- Posts serão carregados aqui -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Aba de Notificações -->
+        <div class="notifications-container" id="notificationsContainer" style="display: none;">
+            <div class="notifications-header">
+                <h2>Notificações</h2>
+                <button onclick="markAllNotificationsAsRead()" class="mark-all-read-button">
+                    Marcar todas como lidas
+                </button>
+            </div>
+            <ul class="notifications-list" id="notificationsList">
+                <!-- Notificações serão carregadas aqui -->
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2024 CompCredi - Rede Social | Desenvolvido com 💚 por Kellmanny
+            <a href="https://sicoobcredicitrus.com.br/"> para Forma TI</a>
+        </p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/posts.js"></script>
+    <script src="js/notificacoes.js"></script>
+</body>
+</html>
